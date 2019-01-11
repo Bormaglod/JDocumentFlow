@@ -15,6 +15,8 @@ import { AppComponent } from './app.component';
 import { /*JwtInterceptor, */ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { SidebarComponent } from './sidebar';
+import { GridComponent } from './grid';
 
 @NgModule({
   imports: [
@@ -26,7 +28,9 @@ import { LoginComponent } from './login';
   declarations: [
       AppComponent,
       HomeComponent,
-      LoginComponent
+      LoginComponent,
+      SidebarComponent,
+      GridComponent
   ],
   providers: [
       //{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

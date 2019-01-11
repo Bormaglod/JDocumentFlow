@@ -2,8 +2,8 @@
 // License: https://opensource.org/licenses/GPL-3.0
 
 export class User {
-   id: string;
+   /*id: string;
    username: string;
-   password: string;
+   password: string;*/
    token: string;
 }
