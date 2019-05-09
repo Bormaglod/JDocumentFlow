@@ -11,8 +11,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { /*JwtInterceptor, */ErrorInterceptor } from './_helpers';
+import { ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { SidebarComponent } from './sidebar';
@@ -23,7 +24,8 @@ import { GridComponent } from './grid';
       BrowserModule,
       ReactiveFormsModule,
       HttpClientModule,
-      AppRoutingModule
+      AppRoutingModule,
+      FontAwesomeModule
   ],
   declarations: [
       AppComponent,
@@ -33,7 +35,6 @@ import { GridComponent } from './grid';
       GridComponent
   ],
   providers: [
-      //{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]

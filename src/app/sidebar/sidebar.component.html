@@ -1,1 +1,20 @@
-<h2>Боковое меню</h2>
+<div class="nav-side-menu">
+   <div class="brand">Document flow</div>
+   <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+   <!--<div class="menu-list">-->
+   <div>
+      <!--<ul id="menu-content" class="menu-content collapse out">-->
+      <ul>
+         <li id="dashboard-item">
+            <a href="#">
+               <fa-icon [icon]="faTachometer" size="lg" [fixedWidth]="true"></fa-icon> Dashboard
+            </a>
+         </li>
+         <li id="exit-item">
+            <a href="logout.php">
+               <fa-icon [icon]="faSignOut" size="lg" [fixedWidth]="true"></fa-icon> Выход
+            </a>
+         </li>
+      </ul>
+   </div>
+</div>
